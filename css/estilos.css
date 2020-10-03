@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .font_404{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 9rem;
   font-weight: 600;
   color:#dd6a31;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6, p{
     list-style-type: none;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    font-size: 1rem; /*cambia el tamaño de las tipos del nav*/
+    font-size: 0.95rem; /*cambia el tamaño de las tipos del nav*/
     font-weight: 650;
     margin-left: auto;
     padding-left:0.7rem;
@@ -305,17 +305,16 @@ h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 10%;
   background-color:#A7ABB1;
 }
-/* For mobile devices 
+/* For mobile devices
 @media only screen and (max-width: 767px) {
-  body {
+  body 
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections
   background-image: url(images/background-photo-mobile-devices.jpg);
   }
-  }
 
-/*filtro index mural*/
-#home::before {
+/*filtro index mural
+#home ::before {
   content: "";
   display: block;
   width: 100%;
@@ -324,7 +323,7 @@ h1, h2, h3, h4, h5, h6, p{
   position: absolute;
   left: 0;
   top: 0;
-}
+}*/
 
 /*SOMOS NEXTMEDIA_UBICACION*/
  
@@ -1036,7 +1035,7 @@ li .texto4_li{
 .blockquote:after,blockquote:after{
     content:"\201D";
     right:0;
-    bottom:-.9em
+    bottom:-.9em;
 }
 .blockquote p,blockquote p .comentario{
     margin-bottom:1rem;
@@ -1056,7 +1055,7 @@ li .texto4_li{
     color:#1C3643;
 }
 #comment .contenedor_comment_right {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     color:#1C3643;
     font-size: 1rem;
