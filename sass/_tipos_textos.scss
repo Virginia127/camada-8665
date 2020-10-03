@@ -1,6 +1,10 @@
 /*general*/
 /*texto bajada secciones_campañas*/
 /*placeholder*/
+a{
+  text-decoration: none;
+}
+
 %titulo_seccion{
 font-family:$font_titulo;
 font-size: $seccion_font-size;
@@ -11,15 +15,21 @@ color: $azul-titulo;
 text-align: center;
 }
 
-.titulo__seccion--c{
+.titulo__seccion--s {
   @extend %titulo_seccion;
-  padding-top: 100px;
+  padding-top: 2rem;
 }
 
 .titulo__seccion--f {
   @extend %titulo_seccion;
   padding-top: 2rem;
 }
+
+.titulo__seccion--c{
+  @extend %titulo_seccion;
+  padding-top: 100px;
+}
+
 .titulo__seccion--co {
   @extend %titulo_seccion;
 }
@@ -33,6 +43,10 @@ text-align: center;
   letter-spacing: 0.2px;
   margin-left: 25%;
   margin-right: 25%;
+  text-align: center;
+} 
+.bajada__titulo__seccion--s{
+  @extend %bajada_seccion;
 } 
 .bajada__titulo__seccion--f{
   @extend %bajada_seccion;
@@ -40,9 +54,13 @@ text-align: center;
 .bajada__titulo__seccion--c{
   @extend %bajada_seccion;
 } 
+.bajada__titulo__seccion--co{
+  @extend %bajada_seccion;
+  margin-left: 30%;
+  margin-right: 30%;
+} 
 
-
-  /*4_FORMATOS_TXTZOCALO_SCROLL*/
+/*4_FORMATOS_TXTZOCALO_SCROLL*/
 #formatos .img__zocaloScroll--txt{
     font-family: $font-scroll;
     font-size: 2rem;
@@ -51,42 +69,39 @@ text-align: center;
     word-spacing: 0.2rem;
     text-align: center;
     text-transform: lowercase;
-    padding-top: 19.2vh;
-    color:$blanco;
+    padding-top: 19.1vh;
   
-    & .img__zocaloScroll--txt a{
-    text-decoration: none;
-    
-    &.img__zocaloScroll--txt a:hover{
+    &.img__zocaloScroll--txt:hover{
     color:#fff;
     }
     }
-  }
-
   
 
 /*4 FORMATOS_títulos -textos*/
-
 #formatos .formatos__card__titulo {
     font-family:$font_titulo;
     font-size: 0.8rem;
     padding-bottom: 2px;
     padding-top: 0.4rem;  
+    font-weight: 900;
+
 }
 
 /*textos*/
 #formatos .formatos__card__titulo--texto{
   @extend .formatos__card__titulo;
   font-family: $font_texto;
-  line-height: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 0.7rem;
   color:$gris-principal;
   padding-top: 5px;
-  }
+}
 
- /*titulos albunes izquierda*/
+/*titulos albunes izquierda*/
 #formatos .subtitulo_secciones_left {
-  font-family:$font_titulo;
-  font-size: 0.9rem;
+  font-family:$font-scroll;
+  font-size: 0.95rem;
   font-weight: 700;
   color:$gris-principal;
   }

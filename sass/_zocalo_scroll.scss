@@ -1,5 +1,7 @@
+
+
 /*mixims*/
-@mixin zocaloScroll ($imgpath, $min-heigh, $background-size, $background-position, $background-attachment, $position, $margin-botton){
+@mixin zocaloScroll ($imgpath, $min-heigh, $background-size, $background-position, $background-attachment, $position, $margin-botton, $margin-top){
     background-image: url($imgpath);
     min-height: $min-heigh;
     background-size: $background-size;
@@ -7,30 +9,59 @@
     background-attachment: $background-attachment;  
     position: $position;
     margin-bottom: $margin-botton;
+    margin-top: $margin-top;
+
   }
  
 .img__zocaloScroll--mobiliario{
-    @include zocaloScroll("../img/f_scroll/mobilidario.jpg",45vh, cover, center center,fixed, relative, 3%);
+    @include zocaloScroll("../img/f_scroll/mobilidario.jpg",45vh, cover, center center,fixed, relative, 6%, 0.1%);
 }
 .img__zocaloScroll--vallados{
-    @include zocaloScroll("../img/f_scroll/vallados.jpg",45vh, cover, center center,fixed, relative, 3%);
+    @include zocaloScroll("../img/f_scroll/vallados.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
     width: 100%;
 }
 .img__zocaloScroll--subtes_trenes{
-    @include zocaloScroll("../img/f_scroll/trenes.jpg",45vh, cover, center center,fixed, relative, 3%);
+    @include zocaloScroll("../img/f_scroll/trenes.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
     width: 100%;
 }
 .img__zocaloScroll--moviles_carteles{
-    @include zocaloScroll("../img/f_scroll/carteles.jpg",45vh, cover, center center,fixed, relative, 3%);
+    @include zocaloScroll("../img/f_scroll/carteles.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
     width: 100%;
 }
-#formatos .img__zocaloScroll--mobiliario::before {
+/*filtro*/
+%filtro_zocaloScroll {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(68, 64, 88, 0.5);
+    background: rgb(49, 56, 63, 0.3);
     position: absolute;
     left: 0;
     top: 0;
+  }
+  #formatos .img__zocaloScroll--mobiliario::before {
+    @extend %filtro_zocaloScroll;
+}
+  #formatos .img__zocaloScroll--vallados::before {
+    @extend %filtro_zocaloScroll;
+}
+#formatos .img__zocaloScroll--subtes_trenes::before {
+    @extend %filtro_zocaloScroll;
+}
+  #formatos .img__zocaloScroll--moviles_carteles::before {
+    @extend %filtro_zocaloScroll;
+}
+
+#formatos #mobiliario_urbano:target { 
+    padding-top: 128px; 
+  }
+  #formatos #vallados:target { 
+    padding-top: 128px; 
+  }
+  #formatos #subtes_trenes:target { 
+    padding-top: 128px; 
+  }
+
+  #formatos #moviles_carteles:target { 
+    padding-top: 128px; 
   }
