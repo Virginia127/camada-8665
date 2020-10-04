@@ -169,6 +169,14 @@ a {
   padding-top: 128px;
 }
 
+#contacto div .banner_top_gris {
+  background-color: #F2F4F6;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 /*4_FORMATO EXEND_ver más ets*/
 .formatos__btn, .formatos__btn--a {
   width: 60px;
@@ -288,30 +296,4 @@ a {
 }
 #header .nav #header nav ul #header nav ul li #header nav li:hover > ul #header nav ul li a #header nav ul li a:hover #header ul li:hover ul {
   display: block;
-}
-
-#contacto div .banner_top_gris {
-  background-color: #F2F4F6;
-  padding-top: 50px;
-  padding-bottom: 25px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-#contacto div .banner_top_gris h2 .seccion {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  word-spacing: 0.2rem;
-  color: #1C3643;
-  text-align: center;
-}
-#contacto div .banner_top_gris p .bajada_seccion {
-  color: #ff7a36;
-  font-family: "Monserrat", sans-serif;
-  font-size: 1rem;
-  padding-top: 0.3rem;
-  letter-spacing: 0.2px;
-  margin-left: 20%;
-  margin-right: 20%;
 }
