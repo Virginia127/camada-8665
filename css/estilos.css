@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 html, body {
     background-color:#fff;
+    font-family: 'Lato', sans-serif;
     font-family:'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -69,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p{
   }
 
 .feature-list .title{	
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 1px;
@@ -177,7 +178,7 @@ h1, h2, h3, h4, h5, h6, p{
 #error_404 nav ul li {
   text-transform: lowercase;
   list-style-type: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   font-size: 0.9rem;
@@ -196,14 +197,14 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .links_404_2{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #007bff;
   font-weight: 600;
   font-size: 0.8rem;
 
 }
 .links_404_3:hover{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #1C3643;
   font-weight: 600;
   font-size: 0.8rem; 
@@ -218,7 +219,7 @@ h1, h2, h3, h4, h5, h6, p{
 #header {
     width:100%;
     background:#fff;
-    height: 69px;
+    height: 75px;
     padding: 29px, 0px;
     transition: all 0.5s;
     z-index: 997;
@@ -235,7 +236,7 @@ h1, h2, h3, h4, h5, h6, p{
 /*MENU LOGO + NAV*/
 #header .menu_nav_ancho { 
     width: 90%;
-    height: 69px;
+    height: 75px;
     display: flex;
     margin:auto;
     flex-direction: row;
@@ -245,22 +246,22 @@ h1, h2, h3, h4, h5, h6, p{
 
 #header .logo .float-left{
     width: 30%;
-    height: 69px;
-    padding-top: 25px;
+    height: 75px;
+    padding-top: 28px;
     display:flex;
     justify-content: left;
 }
 
 #header .nav {
     width: 70%;
-    height: 69px;
+    height: 75px;
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
 }
 
 #header .menu_float_right{
-    padding-top: 21px; 
+    padding-top: 23px; 
 }
 #header nav ul {
     display: flex; 
@@ -299,7 +300,17 @@ h1, h2, h3, h4, h5, h6, p{
     display:inline-block;
     width: auto;
     transition: all .1s;
+    border-bottom: 3px solid trasparent;
+
 }
+#header nav ul li a.active { 
+  color: #ff7a36;
+  border-bottom: 3px solid #ff7a36;
+
+}
+
+
+
 #header nav ul li a:after {
     color: #007bff;
     display: inline-block;
@@ -544,11 +555,11 @@ h1, h2, h3, h4, h5, h6, p{
     justify-self: start;
     grid-auto-columns: 40%;
 }
-/*titulo open; texto: monserrat*/
+/*titulo open; texto: Open Sans*/
 .grid_2c_a_texto {
     font-size: 0.9rem;
     line-height: 1.4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 #nosotros div h2 {
@@ -573,14 +584,14 @@ h1, h2, h3, h4, h5, h6, p{
 #nosotros .texto_nosotros span {
     font-size: 1.1rem;
     line-height: 1.7rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }  
 
 .texto3 span {
     display: block;
     font-size: 0.85rem;
     line-height: 1.3rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 0.9rem;
 }
 
@@ -677,7 +688,7 @@ EMPIEZA SERVICIOS
     color: #111;
     text-transform: none;
     font-size: 0.85rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 0.8rem;
     grid-auto-columns: 70%;
     line-height: 1.3rem;
@@ -707,7 +718,7 @@ li .texto4_li{
     color: #111;
     text-transform: none;
     font-size: 0.85rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     grid-auto-columns: 70%;
     line-height: 1.3rem;
     display: block;
@@ -783,7 +794,7 @@ li .texto4_li{
 }
 
 #mosaico .plaza_titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
     color:#fff;
     font-weight: 600;
     font-size: 0.9rem;
@@ -794,7 +805,7 @@ li .texto4_li{
 }
 
 #mosaico .fecha_campania {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color:#eee;
   font-weight: 600;
   font-size: 0.8rem;
@@ -913,7 +924,7 @@ li .texto4_li{
   }
   
   #mosaico .mosaico_item .mosaico_wrap .mosaico_info h4 .plaza_titulo{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 1.1rem;
@@ -1081,10 +1092,10 @@ li .texto4_li{
     color:#1C3643;
 }
 #comment .contenedor_comment_right {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     color:#1C3643;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     padding: 60px 30px 20px 20px;
     text-align: left;
@@ -1116,7 +1127,7 @@ li .texto4_li{
 
 /*numeros telefonos*/
 .custom-font{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   padding-bottom: 15px;
   padding-top: 0px;
@@ -1146,7 +1157,7 @@ li .texto4_li{
 
 #contacto .contacto-list li {
     margin-bottom:10px;
-    font-family:"Monserrat", sans-serif;
+    font-family:"Open Sans", sans-serif;
     font-size: 0.9rem;
     color:#505458;
 }
@@ -1166,12 +1177,12 @@ li .texto4_li{
 }
 
 #contacto .contacto-list a {
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color:#505458;
 }
 
 #contacto .contacto-list a:hover {
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-decoration: none;
   color:#505458;
@@ -1198,7 +1209,7 @@ input,
 button,
 select,
 textarea {
-    font-family: "Monserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 label {
@@ -1225,7 +1236,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  font-family: "Monserrat",sans-serif;
+  font-family: "Open Sans",sans-serif;
     -webkit-appearance: none;   
     color: #282323;
     outline: 0;
