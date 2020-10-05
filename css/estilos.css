@@ -1823,14 +1823,14 @@ input[type=checkbox]:checked + label {
     color: #31383f;
     text-transform: none;
     font-family:'Open Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     box-sizing: border-box;
     align-self: end;
     inline-size: 20rem;
 }
 .adress_right_1_de_3 { 
-    width: 40%; 
+    width: 50%; 
     display:flex;
     box-sizing: border-box;
     flex-direction:row;
@@ -1870,7 +1870,7 @@ a.mailto:hover {
 }
 
 .links_center_2_de_3{
-    width: 40%; 
+    width: 30%; 
     display:flex;
     box-sizing: border-box;
     flex-direction:row;
