@@ -4,6 +4,70 @@
 a{
   text-decoration: none;
 }
+/*home punto*/
+
+%orange{
+  color: $orange-amarillo;
+  font-size: 3rem;
+  }
+.orange_titulo{
+  @extend %orange;
+  padding-left: 0.2rem;
+}
+
+#orange_point{
+  font-size: 4rem;
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
+}
+.orange_titulo-ceo{
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
+  font-size: 3rem;
+}
+
+%nosotros_titulo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  word-spacing: 0.2rem;
+  text-align: left;
+  color: #31383f;
+
+}
+.nosotros_titulo--2 {
+  @extend %nosotros_titulo;
+  padding-top: 2rem;
+
+}
+
+.nosotros_titulo--1 {
+  @extend %nosotros_titulo;
+  padding-top: 0rem;
+  padding-bottom: 0.8rem;
+
+}
+
+%nosotros_parrafo--1 {
+  color: #31383f;
+  font-family: $font-texto;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  text-align: left;
+  
+}
+.nosotros_parrafo--1 {
+  @extend %nosotros_parrafo--1;
+}
+.nosotros_parrafo--2 {
+  @extend %nosotros_parrafo--1;
+  padding-top: 0.8rem;
+}
+/*HTML SECCIONES_TITULOS*/
 
 %titulo_seccion{
 font-family:$font_titulo;
@@ -17,12 +81,12 @@ text-align: center;
 
 .titulo__seccion--s {
   @extend %titulo_seccion;
-  padding-top: 2rem;
+  padding-top: 2.1rem;
 }
 
 .titulo__seccion--f {
   @extend %titulo_seccion;
-  padding-top: 2rem;
+  padding-top: 2.4rem;
 }
 
 .titulo__seccion--c{
@@ -39,7 +103,7 @@ text-align: center;
   color: #747172;
   font-family: $font-texto;
   font-size: 1rem;
-  padding-top: 0.3rem;
+  padding-top: 0.5rem;
   letter-spacing: 0.2px;
   margin-left: 25%;
   margin-right: 25%;
@@ -60,7 +124,7 @@ text-align: center;
   margin-right: 30%;
 } 
 
-/*formato link de img scroll mobiliario en estilos.css*/
+/*formato link de img scroll mobiliario en estilos.css porque me cambia los colores*/
   
 
 /*4 FORMATOS_títulos -textos*/
@@ -70,7 +134,6 @@ text-align: center;
     padding-bottom: 2px;
     padding-top: 0.4rem;  
     font-weight: 900;
-
 }
 
 /*textos*/
@@ -91,3 +154,4 @@ text-align: center;
   font-weight: 700;
   color:$gris-principal;
   }
+

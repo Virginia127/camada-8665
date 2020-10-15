@@ -1,9 +1,10 @@
 /*variables color*/
 $blanco: #fff;
 $negro: #111;
-$orange-principal:#ff684c !default;
+$orange-principal:#ff6a00 !default;
 $orange-secundario:#dd6a31;
 $orange-terciario: #ff7a36;
+$orange-amarillo:#fbe5b3;
 $azul-titulo: #1C3643;
 
 
@@ -24,15 +25,14 @@ $color-filtro-background: rgba(88, 64, 64, 0.25);
 
 /*variables fonts_esto es un bajón, viva el indesign*/
 $font_titulo:'Lato', sans-serif;
-$font_texto: 'Open Sans', sans-serif;
+$font_texto: 'Raleway', sans-serif;;
 $seccion_font-size: 2.1rem; 
+$nosotros_font-size: 5rem; 
+$font-texto2: 'Open Sans', sans-serif;
 $seccion_font-weight: 600;
-
 $font-btn: 'Roboto Condensed', sans-serif;
 $font-scroll: 'Lato', sans-serif;
-
 $font_open:'Open Sans', sans-serif;
-$font-Mon:'Monserrat', sans-serif;
 /*padding-margin*/
 $padding-seccion: 2rem;
 $margin-bottom-titulo: 2rem;
