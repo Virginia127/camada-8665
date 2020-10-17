@@ -1,4 +1,11 @@
-/*4_FORMATO EXEND_ver más ets*/
+
+
+.orange_titulo{
+  @extend %orange;
+  padding-left: 0.2rem;
+}
+
+/*4_FORMATO ver más ets*/
 .formatos__btn {
   width: 60px;
   padding-top: 25px;
@@ -53,14 +60,12 @@
   }
 }
 
-
-
 /*5_CONTACTO whatsapp*/
 .whatsapp {
     position:fixed;
     width:60px;
     height:60px;
-    bottom:19%;
+    bottom:22%;
     right:90px;
     background-color: $whats_click;
     border-color:$blanco;
@@ -84,25 +89,4 @@
 }
 .feature-list i, .orange-icons i { 
   color:#007bff;
-}
-#button-up{
-  width: 45px;
-  height: 45px;
-  background: #007bff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color:#fff;
-  border-radius: 50%;
-  font-size: 1rem;
-  position: fixed;
-  bottom: 122px;
-  right: 70px;
-  cursor:pointer; cursor: hand;
-  transition: all 300ms ease;
-  transform: scale(0);
-}
-
-#button-up:hover{
-  transform: scale(1.1);
 }

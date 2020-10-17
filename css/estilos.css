@@ -83,12 +83,7 @@ h1, h2, h3, h4, h5, h6, p{
   letter-spacing: 1px;
 }
 
-.zocalo_titulo{
-  color:  #8e8b8c;
-  background-color: #ff7a36;
-  opacity: 100%;
-  padding-top: 10px;
-  }
+
 
 .contenedor_full {
     width: 100%;
@@ -202,7 +197,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 }
 #header nav ul li a.active { 
-  color: #ff7a36;
+  color: #ff6a00;
   font-weight: 650;
 
 }
@@ -227,11 +222,33 @@ h1, h2, h3, h4, h5, h6, p{
 /*--------------------------------------------------------------
  OK_INDEX:TERMINA HEADER + MENU NAVIGATION + MAIN SCROLL + BOTON
 --------------------------------------------------------------*/
+/*home*/
+#button-up{
+  width: 45px;
+  height: 45px;
+  background: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  border-radius: 50%;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 122px;
+  right: 70px;
+  border: 4px solid transparent;
+  cursor: pointer;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
 
+#button-up:hover{
+  transform: scale(1.1);
+}
 /*background*/
 
 #home {
-  background: url("../img/index_mural_3-1.jpg");
+  background: url("../img/home/index_mural_3-1.jpg");
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -240,42 +257,6 @@ h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 8%;
   background-color:#747172;
 }
-
-
-/*box*/
-
-
-img/home/after_photo.svg
-/*esto es para hacer el scroll sobre la foto adentro del contenedor*/
-#workers {  
-  background: url("");
-  min-height: 54.40677966101695vh;
-  min-width: 39.75vw;
-  background-size: 100%;
-  background-position: center center;
-  background-attachment: fixed;   /* Makes the image fixed in the viewport so that it doesn't move when*/
-  position: relative;
-  margin-bottom: 8%;
-}
-/* For mobile devices
-@media only screen and (max-width: 767px) {
-  body 
-    /* The file size of this background image is 93% smaller
-     * to improve page load speed on mobile internet connections
-  background-image: url(images/background-photo-mobile-devices.jpg);
-  }
-
-/*filtro index mural
-#home ::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(88, 64, 64, 0.25);
-  position: absolute;
-  left: 0;
-  top: 0;
-}*/
 
 /*SOMOS NEXTMEDIA_UBICACION*/
  
@@ -286,9 +267,9 @@ img/home/after_photo.svg
   color:#fff;
   text-align: left;
   flex-direction: column;
-  padding-left: 70%;
+  padding-left: 60%;
   transform: translateX(-0%);
-  padding-top: 5%;
+  padding-top: 3%;
   padding-right: 10%;
 }
 /*SOMOS NEXTMEDIA*/
@@ -305,14 +286,14 @@ img/home/after_photo.svg
     line-height: 2rem;
     text-align: left;
     word-spacing: 5px;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 }
 
 .texto_bajada_index span {
     color:#eee;
     line-height: 1.8rem;
     text-align: left;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 /*texto una empresa index*/
 .texto2 span {
@@ -325,110 +306,90 @@ img/home/after_photo.svg
   word-spacing: 2px;
   line-height: 2rem;
 }
+/*.zocalo_titulo{
+  background-color: #282323;
+  opacity: 20%;
+  padding-top: 10px;
+  }*/
 
-/* ----------------------------------------
-        @animation text-shadow-drop-br
-* ---------------------------------------*/
-
-.text-shadow-drop-br {
-	-webkit-animation: text-shadow-drop-br 0.6s both;
-	        animation: text-shadow-drop-br 0.6s both;
+#home .home_btn_index {
+  width: 100px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#home .home_btn_index a{
+  text-decoration: none;
+  outline:none;
 }
 
- @-webkit-keyframes text-shadow-drop-br {
-    0% {
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
-    }
-  }
-  @keyframes text-shadow-drop-br {
-    0% {
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      text-shadow: 6px 6px 18px rgba(0, 0, 0, 0.35);
-    }
-  }
-/* BOTON INDEX_shadow-pop-br - Animista*/
-
-.shadow-pop-br {
-	-webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+#home .home_btn_index:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+#contacto .contacto_btn {
+  width: 80px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#contacto .contacto_btn a{
+  text-decoration: none;
+  outline:none;
 }
 
-@-webkit-keyframes shadow-pop-br {
-  0% {
-    -webkit-box-shadow: 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f;
-    box-shadow: 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px 1px #31383f, 2px 2px #31383f, 3px 3px #31383f, 4px 4px #31383f, 5px 5px #31383f, 6px 6px #31383f, 7px 7px #31383f, 8px 8px #31383f;
-    box-shadow: 1px 1px #31383f, 2px 2px #31383f, 3px 3px #31383f, 4px 4px #31383f, 5px 5px #31383f, 6px 6px #31383f, 7px 7px #31383f, 8px 8px #31383f;
-    -webkit-transform: translateX(-8px) translateY(-8px);
-    transform: translateX(-8px) translateY(-8px);
-  }
+#contacto .contacto_btn:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
 }
-@keyframes shadow-pop-br {
-  0% {
-    -webkit-box-shadow: 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f;
-     box-shadow: 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f, 0 0 #31383f;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px 1px #31383f, 2px 2px #31383f, 3px 3px #31383f, 4px 4px #31383f, 5px 5px #31383f, 6px 6px #31383f, 7px 7px #31383f, 8px 8px #31383f;
-      box-shadow: 1px 1px #31383f, 2px 2px #31383f, 3px 3px #31383f, 4px 4px #31383f, 5px 5px #31383f, 6px 6px #31383f, 7px 7px #31383f, 8px 8px #31383f;
-    -webkit-transform: translateX(-8px) translateY(-8px);
-     transform: translateX(-8px) translateY(-8px);
-  }
-}
-
-.shadow-pop-br {
-  padding-top: 1.6rem;
-  margin-top: 15px;
-    margin-left: 7px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 95px;
-    cursor: pointer;
-    padding: 12px 12px 12px 12px;
-    border: none;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background: #007bff;
-    -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    display: block;
-  }
- 
-  .shadow-pop-br:hover {
-    background:#1C3643;
-    font-family: 'fontawsone', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background: url("../img/arrows/prev.svg");
-
-  }
-
-
 
 /*                 OK_INDEX:Termina MENU + HOME
 --------------------------------------------------------------*/
@@ -480,7 +441,18 @@ img/home/after_photo.svg
   width: 496px;
   height: 100%;
 }
-
+img/home/after_photo.svg
+/*esto es para hacer el scroll sobre la foto adentro del contenedor*/
+#workers {  
+  background: url("");
+  min-height: 54.40677966101695vh;
+  min-width: 40.75vw;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;   /* Makes the image fixed in the viewport so that it doesn't move when*/
+  position: relative;
+  margin-bottom: 8%;
+}
 /*img-box*/
 .workers {
   width: 100%;
@@ -498,11 +470,33 @@ img/home/after_photo.svg
 
 .txt{
   font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-size: 0.9rem;
+  font-style: normal;
+  font-size: 0.85rem;
   color: #747172;
   font-weight:400;
 }
+.txt1{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: #747172;
+  font-weight:400;
+}
+.txt_link{
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #747172;
+  font-weight:400;
+}
+.txt1_link{
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #747172;
+  font-weight:400;
+}
+
 .link {
   position: relative;
   display: inline-block;
@@ -519,7 +513,7 @@ img/home/after_photo.svg
 
   @media (min-width: 1600px) {
     .link {
-      font-size: 2rem; } 
+      font-size: 1rem; } 
     }
   .link .txt {
     position: relative;
@@ -661,12 +655,12 @@ overflow: hidden;
 }
 
 #equipo .contenedor_full_orange1 {
-  background:#fbe5b3;
+  background:#fff4df;
   width: 100%;
   height: auto;
-  padding: 60px 20px 50px 20px;
-  margin-top: 4rem;
-  margin-bottom: 3.5rem;
+  padding: 70px 20px 60px 20px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
   box-sizing: border-box; 
 }
 /*--------------------------------------------------------------
@@ -714,7 +708,6 @@ EMPIEZA SERVICIOS
 .contenedor_2 {
     margin: auto;
 }
-
 
 #servicios .contenedor ul {
     margin-top: 2rem;
@@ -850,7 +843,6 @@ li .texto4_li{
 /*--------------------------------------------------------------
                     EMPIEZA:CAMPAÑAS:MOSAICO
 --------------------------------------------------------------*/
-
 
 #mosaico a {
     text-decoration: none;
@@ -1006,7 +998,6 @@ li .texto4_li{
 #mosaico .mosaico_item .mosaico_wrap .mosaico_info h4 a:hover {
     color:  #ff7a36;
 }
-  
 
 #mosaico .mosaico_item .mosaico_wrap .mosaico_info .link-preview,
 #mosaico .mosaico_item .mosaico_wrap .mosaico_info .link-details {
@@ -1050,131 +1041,71 @@ li .texto4_li{
 /*--------------------------------------------------------------
                     INICIA COMENTARIO INTERCAMBIO             */
 
-#comment .contenedor_full_orange {
-    background: #ff7a36;
-    width: 100%;
-    height: auto;
-    padding: 20px 20px 30px 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    box-sizing: border-box; 
+/*bootstrap carrousel*/
+.carousel {
+  margin-bottom: 0rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  margin-bottom: 1.5rem;
+  z-index: 20;
 }
 
-#comment .contenedor_comment_80{ 
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-#comment .grid_comment{
-    display: grid;
-    margin:auto;
-    width: 80%;
-    grid-template-columns: 1fr, 2fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px; /*espacio entre columnas*/
-    display: flex;
-    margin-bottom: 1rem;
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 25rem;
+  margin-top: 5rem;
+
+  transition: all 0.4s ease-in-out;
 }
 
-#comment .grid_comment .contenedor_img_comment_left { 
-    display:flex;
-    box-sizing: border-box;
-    flex-direction:row;
-    margin: auto;
-}
-#comment .img_avatar_redonda{
-    width: 160px;
-    height:160px;
-    border-radius:80px;
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }
 
-#comment .contenedor_comment_90 .grid_comment .contenedor_img_comment_left{
-    grid-column-start:1;
-    grid-column-end: 2;
-    justify-self: start;
-    grid-auto-columns: 40%;
-}
-
-#comment .grid_comment .contenedor_comment_right { 
-    display:flex;
-    box-sizing: border-box;
-    flex-direction:row;
-    color:#31383f;
-}
-
-#comment .grid_comment .contenedor_comment_right { 
-    grid-column-start:2;
-    grid-column-end: 3;
-    justify-self: end;
-    grid-auto-columns: 50%;
-    display:flex;
-}
-/**/
-.blockquote, blockquote{
-    font-size:5rem;
-    font-style:oblique;
-    position:relative;
-    margin-top:2.5rem;
-    padding: 5px 0px 0px 20px; /* espacio en relación a las comillas, lei que los espacios negativos no funciona, pero cabmia*/
-}
-    
-.blockquote:after,.blockquote:before,blockquote:after,blockquote:before{
-    position:absolute;
-    font-size:1rem;
-    font-weight:700;
-    font-style:normal
-}
-.blockquote:before,blockquote:before{
-    content:"\201C"; /*signo comillas*/
-    top:-.35em;
-    left:-.05em;
-}
-
-.blockquote:after,blockquote:after{
-    content:"\201D";
-    right:0;
-    bottom:-.9em;
-}
-.blockquote p,blockquote p .comentario{
-    margin-bottom:1rem;
-}
-.blockquote>:last-child,blockquote>:last-child{
-    margin-bottom:0
-}
+/*bootstrap carrousel*/
 
 .credit{
     font-size:0.9rem;
     font-style:normal;
-    font-weight:600; 
+    font-weight:400;
+    color:#1C3643;
+    padding-bottom: 2rem;
+}
+.bluequote{
+  width: 5rem;
+  height: auto;
+  padding-bottom: 1rem;
 }
 
-.blockquote--boxed:after,.blockquote--boxed:before,.blockquote:not(:only-child):after,.blockquote:not(:only-child):before,blockquote--boxed:after,blockquote--boxed:before,blockquote:not(:only-child):after,blockquote:not(:only-child):before{
-    font-size:4rem;
-    color:#1C3643;
+#myCarousel .carousel-indicators li{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color:#747172;
 }
-#comment .contenedor_comment_right {
+
+.comentario {
     font-family: 'Lato', sans-serif;
     font-style: italic;
     color:#1C3643;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding: 60px 30px 20px 20px;
-    text-align: left;
+    text-align: center;
     line-height: 2.1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 #comment .comentario span {
     display: block;
 }
 
-#comment .col { 
-    background: none; 
-    padding: 1rem ; 
-    text-align:left;
-    flex-direction:row;
-}
 
 
 /*--------------------------------------------------------------
@@ -1586,52 +1517,6 @@ form legend {
 
  /*BOTON ENVIAR*/
 
-.submit .shadow-pop-br{    
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    cursor: pointer;
-    padding: 8px 12px 8px 12px;
-    border: none;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    background:#ff7a36;
-    -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-    display: inline;
-  }
-  
-  .shadow-pop-br:hover {
-    background: #dd6a31; 
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color:#fff;
-  }
-
-
-@media (max-width: 768px) {
-.shadow-pop-br {
-    width:100%;
-    float: none;
-    text-align:center;
-    }
-}
 
 input[type=checkbox] + label {
   color: #ccc;
@@ -1728,7 +1613,7 @@ input[type=checkbox]:checked + label {
 }
 
 #formatos .img__zocaloScroll--txt:hover{
-  color:#ff7a36;
+  color:#007bff;
   text-decoration: none;
   font-size: 1rem;
   }
@@ -1966,14 +1851,12 @@ a.mailto:hover {
     display:flex;
     box-sizing: border-box;
     flex-direction:row;
-    padding-top: 0.3rem ; 
+    padding-top: 0.3rem; 
 
   }
   .skyline_right_3_de_3 img{
     align-items: flex-start;
  }
-    
-
 
 /*                  TERMINA FOOTER LINKS
 --------------------------------------------------------------*/
@@ -2073,7 +1956,6 @@ main.contenido_pag {
 #error_404 .cara{
   padding-bottom: 20px;
   padding-top: 20px;
-
 }
 
 .font_404{
@@ -2140,4 +2022,4 @@ main.contenido_pag {
   font-size: 0.8rem; 
   font-variant: italic;
   text-decoration: none;
-}
+}}

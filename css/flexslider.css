@@ -1,5 +1,4 @@
 /*SLIDER CAMPAÑAS*/
-
 @font-face {
   font-family: 'flexslider-icon';
   src: url('../fonts/flexslider-icon.eot');
@@ -39,7 +38,7 @@
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	bottom: -10%;
+	bottom: -5%; /*posicion de bullets*/
 	z-index: 999;
 }
 
@@ -50,7 +49,7 @@
 
 .flex-control-nav li a{
 	display: block;
-	background: #777777;
+	background: #747172;
 	width: 12px;
 	height: 12px;
 	border-radius: 12px;
@@ -58,18 +57,18 @@
 }
 
 .flex-control-nav li a:hover{
-	background:  #31383f;
+	background: #007bff;;
 }
 
 .flex-control-nav li a.flex-active{
 	background: #ff7a36;	
 }
 
-.flex-direction-nav a{
+.flex-direction-nav a{ /*posicion de prev-next*/
 	display: block;
 	text-decoration: none;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	z-index: 999;
 	width: 40px;
 	height: 40px;

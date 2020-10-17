@@ -7,7 +7,7 @@ a{
 /*home punto*/
 
 %orange{
-  color: $orange-amarillo;
+  color: $orange-amarillo-punto;
   font-size: 3rem;
   }
 .orange_titulo{
@@ -26,6 +26,13 @@ a{
   color: $orange-principal;
   font-family:$font_titulo;
   font-size: 3rem;
+}
+
+#orange_point-secciones{
+  font-size: 3rem;
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
 }
 
 %nosotros_titulo {
