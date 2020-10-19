@@ -6,6 +6,7 @@ a{
 }
 /*home punto*/
 
+
 %orange{
   color: $orange-amarillo-punto;
   font-size: 3rem;
@@ -44,19 +45,23 @@ a{
   word-spacing: 0.2rem;
   text-align: left;
   color: #31383f;
-
 }
 .nosotros_titulo--2 {
   @extend %nosotros_titulo;
   padding-top: 2rem;
-
 }
 
 .nosotros_titulo--1 {
   @extend %nosotros_titulo;
   padding-top: 0rem;
   padding-bottom: 0.8rem;
-
+}
+.servicios_titulo--1 {
+  @extend %nosotros_titulo;
+}
+.servicios_titulo--2 {
+  @extend %nosotros_titulo;
+  padding-top: 2rem;
 }
 
 %nosotros_parrafo--1 {
@@ -65,7 +70,6 @@ a{
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   text-align: left;
-  
 }
 .nosotros_parrafo--1 {
   @extend %nosotros_parrafo--1;
@@ -74,6 +78,22 @@ a{
   @extend %nosotros_parrafo--1;
   padding-top: 0.8rem;
 }
+#planificacion .servicios_parrafo--1 {
+  @extend %nosotros_parrafo--1;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 0.8rem;
+  margin-right:6rem;
+}
+#planificacion .texto4_li {
+  @extend %nosotros_parrafo--1;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 6rem;
+  
+}
+.span.texto4_li{
+  display: block;
+}
+
 /*HTML SECCIONES_TITULOS*/
 
 %titulo_seccion{
@@ -118,6 +138,7 @@ text-align: center;
 } 
 .bajada__titulo__seccion--s{
   @extend %bajada_seccion;
+  padding-top: 0.5rem;
 } 
 .bajada__titulo__seccion--f{
   @extend %bajada_seccion;
@@ -155,10 +176,5 @@ text-align: center;
 }
 
 /*titulos albunes izquierda*/
-#formatos .subtitulo_secciones_left {
-  font-family:$font-scroll;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color:$gris-principal;
-  }
+
 

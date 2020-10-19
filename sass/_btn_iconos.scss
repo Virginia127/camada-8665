@@ -1,9 +1,5 @@
 
 
-.orange_titulo{
-  @extend %orange;
-  padding-left: 0.2rem;
-}
 
 /*4_FORMATO ver más ets*/
 .formatos__btn {
@@ -89,4 +85,125 @@
 }
 .feature-list i, .orange-icons i { 
   color:#007bff;
+}
+
+
+#home .home_btn_index {
+  width: 100px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#home .home_btn_index a{
+  text-decoration: none;
+  outline:none;
+}
+
+#home .home_btn_index:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+
+#contacto .contacto_btn {
+  width: 80px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#contacto .contacto_btn a{
+  text-decoration: none;
+  outline:none;
+}
+
+#contacto .contacto_btn:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+#cotiza .servicios_btn_cotizar {
+  width: 190px;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 15px;
+  margin-top: 2rem;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#cotiza .servicios_btn_cotizar a{
+  text-decoration: none;
+  outline:none;
+}
+
+#cotiza .servicios_btn_cotizar:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
 }

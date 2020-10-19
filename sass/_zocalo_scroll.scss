@@ -8,7 +8,6 @@
     position: $position;
     margin-bottom: $margin-botton;
     margin-top: $margin-top;
-
   }
  
 .img__zocaloScroll--mobiliario{
@@ -25,6 +24,10 @@
 .img__zocaloScroll--moviles_carteles{
     @include zocaloScroll("../img/f_scroll/carteles.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
     width: 100%;
+}
+.mapa__zocaloScroll--geoplaning{
+  @include zocaloScroll("../img/f_scroll/geoplaning2.jpg",45vh, cover, center center,fixed, relative, 6%, -1.8%);
+  width: 100%;
 }
 /*filtro*/
 %filtro_zocaloScroll {
@@ -49,6 +52,10 @@
   #formatos .img__zocaloScroll--moviles_carteles::before {
     @extend %filtro_zocaloScroll;
 }
+#servicios .mapa__zocaloScroll--geoplaning::before {
+  @extend %filtro_zocaloScroll;
+  background: rgb(49, 56, 63, 0.2);
+}
 
 #formatos #mobiliario_urbano:target { 
     padding-top: 128px; 
@@ -63,6 +70,10 @@
   #formatos #moviles_carteles:target { 
     padding-top: 128px; 
   }
+  #servicios #planificacion:target { 
+    padding-top: 90px; 
+  }
+
   #contacto div .banner_top_gris {
     background-color: #F2F4F6;
     padding-top: 50px;

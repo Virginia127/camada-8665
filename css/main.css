@@ -57,7 +57,7 @@ a {
   font-family: "Lato", sans-serif;
 }
 
-.nosotros_titulo--1, .nosotros_titulo--2 {
+.servicios_titulo--2, .servicios_titulo--1, .nosotros_titulo--1, .nosotros_titulo--2 {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2rem;
@@ -77,7 +77,11 @@ a {
   padding-bottom: 0.8rem;
 }
 
-.nosotros_parrafo--2, .nosotros_parrafo--1 {
+.servicios_titulo--2 {
+  padding-top: 2rem;
+}
+
+#planificacion .texto4_li, #planificacion .servicios_parrafo--1, .nosotros_parrafo--2, .nosotros_parrafo--1 {
   color: #31383f;
   font-family: "Raleway", sans-serif;
   font-size: 0.95rem;
@@ -87,6 +91,21 @@ a {
 
 .nosotros_parrafo--2 {
   padding-top: 0.8rem;
+}
+
+#planificacion .servicios_parrafo--1 {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 0.8rem;
+  margin-right: 6rem;
+}
+
+#planificacion .texto4_li {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 6rem;
+}
+
+.span.texto4_li {
+  display: block;
 }
 
 /*HTML SECCIONES_TITULOS*/
@@ -124,6 +143,10 @@ a {
   text-align: center;
 }
 
+.bajada__titulo__seccion--s {
+  padding-top: 0.5rem;
+}
+
 .bajada__titulo__seccion--co {
   margin-left: 30%;
   margin-right: 30%;
@@ -150,13 +173,6 @@ a {
 }
 
 /*titulos albunes izquierda*/
-#formatos .subtitulo_secciones_left {
-  font-family: "Lato", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #747172;
-}
-
 /*mixims*/
 .img__zocaloScroll--mobiliario {
   background-image: url("../img/f_scroll/mobilidario.jpg");
@@ -205,8 +221,20 @@ a {
   width: 100%;
 }
 
+.mapa__zocaloScroll--geoplaning {
+  background-image: url("../img/f_scroll/geoplaning2.jpg");
+  min-height: 45vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 6%;
+  margin-top: -1.8%;
+  width: 100%;
+}
+
 /*filtro*/
-#formatos .img__zocaloScroll--moviles_carteles::before, #formatos .img__zocaloScroll--subtes_trenes::before, #formatos .img__zocaloScroll--vallados::before, #formatos .img__zocaloScroll--mobiliario::before {
+#servicios .mapa__zocaloScroll--geoplaning::before, #formatos .img__zocaloScroll--moviles_carteles::before, #formatos .img__zocaloScroll--subtes_trenes::before, #formatos .img__zocaloScroll--vallados::before, #formatos .img__zocaloScroll--mobiliario::before {
   content: "";
   display: block;
   width: 100%;
@@ -215,6 +243,10 @@ a {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#servicios .mapa__zocaloScroll--geoplaning::before {
+  background: rgba(49, 56, 63, 0.2);
 }
 
 #formatos #mobiliario_urbano:target {
@@ -233,16 +265,16 @@ a {
   padding-top: 128px;
 }
 
+#servicios #planificacion:target {
+  padding-top: 90px;
+}
+
 #contacto div .banner_top_gris {
   background-color: #F2F4F6;
   padding-top: 50px;
   padding-bottom: 25px;
   text-align: center;
   margin-bottom: 40px;
-}
-
-.orange_titulo {
-  padding-left: 0.2rem;
 }
 
 /*4_FORMATO ver más ets*/
@@ -320,4 +352,107 @@ a {
 
 .feature-list i, .orange-icons i {
   color: #007bff;
+}
+
+#home .home_btn_index {
+  width: 100px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-overflow: clip;
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+
+#home .home_btn_index a {
+  text-decoration: none;
+  outline: none;
+}
+
+#home .home_btn_index:hover {
+  color: #fff;
+  background: #007bff;
+  text-decoration: none;
+}
+
+#contacto .contacto_btn {
+  width: 80px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-overflow: clip;
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+
+#contacto .contacto_btn a {
+  text-decoration: none;
+  outline: none;
+}
+
+#contacto .contacto_btn:hover {
+  color: #fff;
+  background: #007bff;
+  text-decoration: none;
+}
+
+#cotiza .servicios_btn_cotizar {
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  margin-top: 2rem;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-overflow: clip;
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+
+#cotiza .servicios_btn_cotizar a {
+  text-decoration: none;
+  outline: none;
+}
+
+#cotiza .servicios_btn_cotizar:hover {
+  color: #fff;
+  background: #007bff;
+  text-decoration: none;
 }
