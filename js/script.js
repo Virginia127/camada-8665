@@ -1,3 +1,5 @@
+// Scroll up
+
 document.getElementById("button-up").addEventListener("click", scrollUp);
 
 function scrollUp(){
@@ -6,9 +8,11 @@ function scrollUp(){
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo (100, currentScroll - (currentScroll / 10));
+        window.scrollTo (0, currentScroll - (currentScroll / 10));
     }
 }
+
+
 ///
 
 buttonUp = document.getElementById("button-up");
@@ -24,7 +28,3 @@ window.onscroll = function(){
     }
 
 }
-
-
-
-

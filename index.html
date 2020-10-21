@@ -2,7 +2,7 @@
     <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <title>Nextmedia | Vía Pública</title>
     <meta name="keywords" content="agencia, ooh, medios, vía pública, advertising, pauta, publicitaria, compra, espacios publicitarios, online, televisión, evistas, diarios, radio, media agency">
     <meta name="description" content="Somos una agencia de vía pública con alcance nacional. Desde hace ya varios años creamos servicios y productos que impactan en los clientes de nuestros clientes, destacando la comunicación y dirección como principales pilares. Todos sabemos que no hay una buena comunicación sin una fuerte dirección, así como no existe una buena dirección sin una clara comunicación."/>
@@ -24,14 +24,10 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flexboxgrid.min.css"> 
+    <!-- Menu Bars -->
+
+
    
-    <!-- a revisar, sacado de --> 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.autosize/3.0.17/autosize.min.js"></script>
-    <script>
-		autosize(document.querySelectorAll('textarea'));
-    </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.0/lazysizes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.0/plugins/unveilhooks/ls.unveilhooks.min.js"></script>
@@ -80,46 +76,49 @@
     });
     });
     </script>
-<!-- Stylesheet Animation AOS CSS File --> 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!--Stylesheet Animation animate.style/-->
+
+<!--Stylesheet Animation animate.style/--><!--wow-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
-<!--wow-->
     <link rel="stylesheet" href="css/animate.css">
    <!--   greensock.com -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 
-<!-- Empieza Barra Menú--><!--no funciona bars -->
+<!-- Empieza Barra Menú-->
 <body>
     <header id="header" class="fixed-top">
         <div class="container-fuid">
-        <a href="#nav" class="open"><img src="icons/open.svg" /></a>
-            <nav id="nav">
-            <div class="menu_nav_ancho"> 
-                <div class="logo float-left">
-                    <a href="index.html" class="scrollto"> <img src="img/logo_next_3.png" alt="isologo" class="img-fluid" width="90%"></a>
-                    <a href="#"> <img src="icons/close.svg" class="close" width="90px" height="90px"></a>
-                </div>             
-                <div class="menu">
-                    <nav class="menu_float_right">
-                        <ul>
-                            <li class="#"><a href="index.html" class="active">home</a></li>
-                            <li class="#"><a href="secciones/servicios.html">servicios</a></li> 
-                            <li class="#"><a href="secciones/campanias.html">campañas</a></li>
-                            <li class="#"><a href="secciones/formatos.html">formatos</a></li> 
-                            <li class="#">|</li>
-                            <li class="#"><a href="secciones/contacto.html">contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div> 
-            </nav>
-        </div> 
+            <!--<div id="icon_open">
+                <a href="#nav" class="open"><img src="icons/open.svg"/></a>-->
+                <nav id="nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="menu_nav_ancho"> 
+                        <div class="logo float-left">
+                        <a href="index.html" class="scrollto"> <img src="img/logo_next_3.png" alt="isologo" class="img-fluid" width="90%"></a>
+                        <!--<a href="#" class="close"> <img src="icons/close.svg"></a>-->
+                        </div>   
+                        <div class="menu">
+                        <nav class="menu_float_right">
+                            <ul>
+                                <li class="#"><a href="index.html" class="active">home</a></li>
+                                <li class="#"><a href="secciones/servicios.html">servicios</a></li> 
+                                <li class="#"><a href="secciones/campanias.html">campañas</a></li>
+                                <li class="#"><a href="secciones/formatos.html">formatos</a></li> 
+                                <li class="#">|</li>
+                                <li class="#"><a href="secciones/contacto.html">contacto</a></li>
+                            </ul>
+                        </nav>
+                        </div>
+                    </div> 
+                </nav>
+        </div>
     </header>
 <!--Termina Menu+logo-->
 
-<!--le da el margen superior para que scrolee-->
+<!--margen scroll-->
 <main class="contenido_pag">
 <!-- Empieza Home --> 
 <section id="home">
@@ -129,9 +128,8 @@
                 <span class="striked">
                 <h1 class="texto_bajada_index">
                 Somos <strong><span></span>Nextmedia</span></strong><span id="orange_point">.</span></h1></span>
-                <div class="zocalo_titulo"><p class="texto2"><span class="striked">Especialistas en publicidad</span><span class="striked">exterior <i>OOH</i> en todo el País.</span></p> 
-                </div>
-            </span>
+                <p class="texto2"><span class="striked">Especialistas en publicidad</span><span class="striked">exterior <i>OOH</i> en todo el País.</span></p> 
+                </span>
             </div>
             <div class="wow animate__animated animate__slideInUp">
                 <a class="home_btn_index" href="#nosotros" rel="stylesheet" type="text/css">conocenos</a>
@@ -149,13 +147,13 @@
                 <div class="box_zoom">
                     <img class="featurette-image img-fluid mx-auto">
                         <div class="workers">
-                            <img src="img/home/home_w1.jpg" alt="equipo"> 
+                            <img src="img/home/home_w1.jpg" alt="equipo" class="img-fluid"> 
                         </div>
                 </div>
             </div>  
             <div class="col-md-6 order-md-2">
                 <div class="wow animate__animated animate__bounceInRight">
-                    <span class="titulo_bloque_waves">
+                    <span class="titulo_bloque_waves-first">
                     <img src="icons/noun_wavy lines_2588773.svg" width="50px" height="auto" class="waves">
                     <span class="mskd"><span class="txt">somos</span></span>
                     </span>
@@ -169,29 +167,30 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="nosotros">
-        <div class="container">
-            <div class="row somos">   
-                <div class="col-md-6 order-md-2">
-                    <div class="box_zoom">
-                        <img class="featurette-image img-fluid mx-auto">
-                            <div class="workers">
-                                <img src="img/home/home_w2.jpg" alt="equipo"> 
-                            </div>
-                    </div>
+    </div>
+</section>
+<section id="nosotros">
+    <div class="container">
+        <div class="row somos">   
+            <div class="col-md-6 order-md-2">
+                <div class="box_zoom">
+                    <img class="img-fluid mx-auto">
+                        <div class="workers">
+                        <img src="img/home/home_w2.jpg" alt="equipo" class="img-fluid"> 
+                        </div>
                 </div>
-                <div class="col-md-6 order-md-1">
-                    <div class="wow animate__animated animate__bounceInLeft">
-                        <h2 class="nosotros_titulo--2">Marcas potenciadas<span class="orange_titulo">.</span></h2>
-                        <span class="text-muted"></span>
-                        <p class="nosotros_parrafo--2">Creemos en la perfecta comunicación Empresa-Cliente para comprender la Visión, Misión y Objetivos de la Dirección. Nuestra Agencia está constituida por destacados profesionales de los medios de comunicación, que hacen de esta compañía un sinónimo de calidad y compromiso, teniendo como mayor diferenciador la creatividad y su potencial para el desarrollo de exitosos negocios.</p>
-                        <a href="secciones/campanias.html" class="link"><span class="txt_link">Conocé las campañas</span></a>    
-                    </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="wow animate__animated animate__bounceInLeft">
+                <h2 class="nosotros_titulo--2">Marcas potenciadas<span class="orange_titulo">.</span></h2>
+                <span class="text-muted"></span>
+                <p class="nosotros_parrafo--2">Creemos en la perfecta comunicación Empresa-Cliente para comprender la Visión, Misión y Objetivos de la Dirección. Nuestra Agencia está constituida por destacados profesionales de los medios de comunicación, que hacen de esta compañía un sinónimo de calidad y compromiso, teniendo como mayor diferenciador la creatividad y su potencial para el desarrollo de exitosos negocios.</p>
+                <a href="secciones/campanias.html" class="link"><span class="txt_link">Conocé las campañas</span></a>    
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section id="nosotros">
         <div class="container">
             <div class="row somos">  
@@ -215,7 +214,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
 <!-- inicia Equipo-->
@@ -227,7 +225,7 @@
                         <div class="box_zoom">
                             <img class="featurette-image img-fluid mx-auto">
                             <div class="workers">
-                            <img src="img/home/home_w4.jpg" alt="Ana María Maksymón"> 
+                                <img src="img/home/home_w4.jpg" alt="Ana María Maksymón"> 
                             </div>
                         </div>
                     </div>
@@ -248,62 +246,61 @@
             </div>
         </div>
     </section>
-
-
 <!-- TERMINA Equipo -->
 
 <!-- Empieza carrousel dispositivos_flexslider_basic.css-->
-<div class="container">
-    <span class="titulo_bloque_waves">
-        <img src="icons/noun_wavy lines_2588773.svg" width="50px" height="auto" class="waves">
-        <span class="mskd"><span class="txt">clientes</span></span>
+<section id="titulo_carrousel">
+    <div class="container">
+        <span class="titulo_bloque_waves">
+            <img src="icons/noun_wavy lines_2588773.svg" width="50px" height="auto" class="waves">
+            <span class="mskd"><span class="txt">clientes</span></span>
         </span>
-    <div id="clientes">
-      <div class="wow animate__animated animate__slideInUp">
-        <h2 class="nosotros_titulo--1">Últimas campañas<span class="orange_titulo-ceo">.</span></h2>
-    </div>
-  </div>
-</div>
-
-<div id="main" role="main">
-<section id="carousel">
-    <div class="contenedor_full_blanco"> 
-      <div class="flexslider carousel">
-            <ul class="slides">
-                <li><img src="img/carousel/1.png"/></li>
-                <li><img src="img/carousel/2.jpg"/></li>
-                <li><img src="img/carousel/3.jpeg"/></li>
-                <li><img src="img/carousel/18.jpg"/></li>
-                <li><img src="img/carousel/5.jpg"/></li>
-                <li><img src="img/carousel/30.jpg"/></li>
-
-                <li><img src="img/carousel/8.png"/></li>
-                <li><img src="img/carousel/13.jpg"/></li>
-                <li><img src="img/carousel/6.jpg"/></li>
-                <li><img src="img/carousel/4.jpg"/></li>
-                <li><img src="img/carousel/7.jpg"/></li>
-                <li><img src="img/carousel/10.jpg"/></li>
-
-                <li><img src="img/carousel/11.jpg"/></li>
-                <li><img src="img/carousel/12.jpg"/></li>
-                <li><img src="img/carousel/9.jpg"/></li>
-                <li><img src="img/carousel/14.jpg"/></li>
-                <li><img src="img/carousel/15.jpg"/></li>
-                <li><img src="img/carousel/27.jpg"/></li>
-
-                <li><img src="img/carousel/16.jpg"/></li>
-                <li><img src="img/carousel/19.jpg"/></li>
-                <li><img src="img/carousel/20.jpg"/></li>
-                <li><img src="img/carousel/21.jpg"/></li>
-                <li><img src="img/carousel/24.jpg"/></li>
-                <li><img src="img/carousel/17.jpg"/></li>
-            </ul>
+        <div id="clientes">
+            <div class="wow animate__animated animate__slideInUp">
+            <h2 class="nosotros_titulo--1">Últimas campañas<span class="orange_titulo-ceo">.</span></h2>
         </div>
     </div>
-</div>
 </section>
-</div>
-<!-- Termina Carousel_LINKS -->
+
+<section id="carousel">
+    <div class="wow animate__animated animate__slideInUp">
+        <div class="contenedor_full_blanco"> 
+            <div class="flexslider carousel">
+                <ul class="slides">
+                    <li><img src="img/carousel/1.png"/></li>
+                    <li><img src="img/carousel/2.jpg"/></li>
+                    <li><img src="img/carousel/3.jpeg"/></li>
+                    <li><img src="img/carousel/18.jpg"/></li>
+                    <li><img src="img/carousel/5.jpg"/></li>
+                    <li><img src="img/carousel/30.jpg"/></li>
+
+                    <li><img src="img/carousel/8.png"/></li>
+                    <li><img src="img/carousel/13.jpg"/></li>
+                    <li><img src="img/carousel/6.jpg"/></li>
+                    <li><img src="img/carousel/4.jpg"/></li>
+                    <li><img src="img/carousel/7.jpg"/></li>
+                    <li><img src="img/carousel/10.jpg"/></li>
+
+                    <li><img src="img/carousel/11.jpg"/></li>
+                    <li><img src="img/carousel/12.jpg"/></li>
+                    <li><img src="img/carousel/9.jpg"/></li>
+                    <li><img src="img/carousel/14.jpg"/></li>
+                    <li><img src="img/carousel/15.jpg"/></li>
+                    <li><img src="img/carousel/27.jpg"/></li>
+
+                    <li><img src="img/carousel/16.jpg"/></li>
+                    <li><img src="img/carousel/19.jpg"/></li>
+                    <li><img src="img/carousel/20.jpg"/></li>
+                    <li><img src="img/carousel/21.jpg"/></li>
+                    <li><img src="img/carousel/24.jpg"/></li>
+                    <li><img src="img/carousel/17.jpg"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Termina Carousel campañas-->
 
 <!--Boton de ir hacia arriba-->
     <div id="button-up">
@@ -315,10 +312,9 @@
     <div class="area_footer_contacto_100"><!-- MARGIN 100 -->
         <div class="contenedor_footer_contacto_90"> <!-- MARGIN 90 -->
             <div class="grid_footer">
-              <div class="col skyline_right_3_de_3">
-                <img class="#" width="100%" height="auto" src="img/footer/3445986-02-01.svg"></img>
-             </div>
-
+                <div class="col skyline_right_3_de_3">
+                    <img class="skyline"width="100%" height="auto" src="img/footer/3445986-02-01.svg"></img>
+                </div>
                 <div class="col adress_right_1_de_3">
                     <p><strong class="titulo--adress"><span>agencia</span></strong>
                     <span>Av. Alicia Moreau de Justo 1150, 4to. Of. 410 B</span>
@@ -328,14 +324,15 @@
                     <span>Email: <a class="mailto" href="mailto:info@nextmedia.com.ar?Subject=Interesado en OOH">info@nextmedia.com.ar</a></span></p>
                 </div>
                 <div class="col links_center_2_de_3">
-                <ul>
-                    <li><strong class="titulo--links"><span>quick links</span></strong></li>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="secciones/servicios.html">servicios</a></li>
-                    <li><a href="secciones/formatos.html">formatos</a></li>
-                    <li><a href="secciones/campanias.html">campañas</a></li>
-                    <li><a href="secciones/contacto.html">contacto</a></li>
-                </ul>
+                    <ul>
+                        <li><strong class="titulo--links"><span>quick links</span></strong></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="secciones/servicios.html">servicios</a></li>
+                        <li><a href="secciones/formatos.html">formatos</a></li>
+                        <li><a href="secciones/campanias.html">campañas</a></li>
+                        <li><a href="secciones/contacto.html">contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -348,17 +345,15 @@
     <div class="area_footer_copyright_100">
         <div class="contenedor_footer_copyright_90">
             <div class="contenedor_copyright_left">
-                <p class="copyright_texto">© Nextmedia 2020 | Virginia Bernaschina | Todos los derechos reservados</p>
+                <p class="copyright_texto ">© Nextmedia 2020</p>
             </div>
             <div class="contenedor_copyright_right">
-                    <p class="copyright_texto">Hecho con <span class="change_color">❤</span></p> 
-                </div>
+                <p class="copyright_texto">Hecho con <span class="change_color">❤</span></p> 
             </div>
         </div>
-    </div>
+    </div> 
 </footer>
 <!-- OK_TERMINA FOOTER_COPYRIGHT -->
-
 </main>
 
 <!-- jQuery primero, popper, Bootstrap JS. --> 
@@ -378,9 +373,11 @@ new WOW().init();
   AOS.init();
 </script>
 
+<!--MobileNav.js-->
+
+
 <!--js buton_up-->
 <script src="js/script.js"></script>
-
 
  <!-- Syntax Highlighter -->
  <script type="text/javascript" src="js/shCore.js"></script>
